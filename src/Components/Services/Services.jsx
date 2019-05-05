@@ -28,7 +28,7 @@ class Services extends Component {
         },
         {
           icon: <FaBeer />,
-          title: "Strongest Beer",
+          title: "Free IPA All Day",
           info:
             "Blog everyday carry aliqua four loko wolf twee selvage butcher tumeric."
         }
@@ -45,7 +45,14 @@ class Services extends Component {
               <article key={index} className="service">
                 <span>{item.icon}</span>
                 <h6>{item.title}</h6>
-                <p>{item.info}</p>
+                {item.title === "Free IPA All Day" ? (
+                  <p>
+                    Everything On Tap, But Were Serving Mississippi Mud By The
+                    Jug!!!
+                  </p>
+                ) : (
+                  <p>{item.info}</p>
+                )}
               </article>
             );
           })}
