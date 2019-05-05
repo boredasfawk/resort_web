@@ -1,8 +1,24 @@
 import React from "react";
-import "./App.css";
+import { Route, Switch } from "react-router-dom";
+
+import NavBar from "./Components/NavBar/NavBar";
+import Home from "./Components/Pages/Home";
+import Rooms from "./Components/Pages/Rooms";
+import SingleRoom from "./Components/Pages/SingleRoom";
+import Error from "./Components/Pages/Error";
 
 function App() {
-  return <>hello from app</>;
+  return (
+    <>
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/rooms/:bored" component={SingleRoom} />
+        <Route component={Error} />
+      </Switch>
+    </>
+  );
 }
 
 export default App;
