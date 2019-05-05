@@ -46,10 +46,7 @@ class Services extends Component {
                 <span>{item.icon}</span>
                 <h6>{item.title}</h6>
                 {item.title === "Free IPA All Day" ? (
-                  <p>
-                    Everything On Tap, But Were Serving Mississippi Mud By The
-                    Jug!!!
-                  </p>
+                  <p>All On Tap, But We Serve Mississippi Mud By The Jug!!!</p>
                 ) : (
                   <p>{item.info}</p>
                 )}
