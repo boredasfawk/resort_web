@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Hero from "../Hero/Hero";
 import Banner from "../Banner/Banner";
 
-const Rooms = () => {
+const Rooms = ({ hero, title }) => {
   return (
     <>
       <Hero hero="roomsHero">
