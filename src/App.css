@@ -20,7 +20,8 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Abel", "Nova Mono", monospace, Verdana, Geneva, Tahoma,
+    sans-serif;
   line-height: 1.4;
 }
 h1 {
@@ -361,7 +362,9 @@ h6 {
 }
 /* end of room  */
 /* single room*/
-
+hr {
+  display: initial;
+}
 .single-room {
   padding: 5rem 0 0 0;
 }
@@ -418,6 +421,24 @@ h6 {
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
 }
+
+@media screen and (max-width: 682px) {
+  hr {
+    display: inline-block;
+    width: 100vw;
+  }
+  .info,
+  .room-extras {
+    margin-left: 3rem;
+  }
+  .desc {
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+  .single-room-images {
+    margin-top: 1rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .single-room-images,
   .single-room-info,
@@ -430,8 +451,16 @@ h6 {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
   }
-  .info {
-    padding-left: 3rem;
+  .info,
+  .room-extras {
+    margin-left: 3rem;
+  }
+  .desc {
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+  .single-room-images {
+    margin-top: 1rem;
   }
 }
 /* end of single room*/

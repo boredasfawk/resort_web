@@ -9,7 +9,7 @@ class FeatureRooms extends Component {
 
   render() {
     const { loading, featuredRooms: rooms } = this.context;
-    console.log(rooms);
+
     return (
       <section className="featured-rooms">
         <Title title="Featured Rooms" />
