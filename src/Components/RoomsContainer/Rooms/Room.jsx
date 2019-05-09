@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import defaultImg from "../../images/room-1.jpeg";
+import defaultImg from "../../../images/room-1.jpeg";
 
 import PropTypes from "prop-types";
 
 const Room = ({ room }) => {
-  console.log(room);
   const { name, slug, price, images } = room;
   return (
     <article className="room">

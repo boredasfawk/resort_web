@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { RoomContext } from "../../Context";
-import Title from "../Title/Title";
+import { RoomContext } from "../../../Context";
+import Title from "../../Title/Title";
 import Loading from "./Loading";
 import Room from "./Room";
 

@@ -24,7 +24,7 @@ export default [
       name: "single economy",
       slug: "single-economy",
       type: "single",
-      price: 100,
+      price: 1100,
       size: 200,
       capacity: 1,
       pets: false,
