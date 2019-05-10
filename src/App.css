@@ -229,7 +229,7 @@ a {
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 1rem;
-  color: antiquewhite;
+  color: var(--mainBlack);
 }
 .section-title div {
   width: 5rem;
