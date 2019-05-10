@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Hero from "../Hero/Hero";
 import Banner from "../Banner/Banner";
+import Footer from "../Footer/Footer";
 
 const Error = () => {
   return (
@@ -14,6 +15,7 @@ const Error = () => {
           </Link>
         </Banner>
       </Hero>
+      <Footer />
     </>
   );
 };

@@ -5,6 +5,7 @@ import StyledHero from "../StyledComponents/StyledHero";
 
 import defaultBcg from "../../images/room-1.jpeg";
 import Banner from "../Banner/Banner";
+import Footer from "../Footer/Footer";
 
 class SingleRoom extends Component {
   constructor(props) {
@@ -103,6 +104,7 @@ class SingleRoom extends Component {
               })}
             </ul>
           </section>
+          <Footer />
         </>
       );
     }
