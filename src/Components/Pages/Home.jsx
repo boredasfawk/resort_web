@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero";
 import Banner from "../Banner/Banner";
 import Services from "../Services/Services";
 import FeatureRooms from "../RoomsContainer/Rooms/FeatureRooms";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       </Hero>
       <Services />
       <FeatureRooms />
+      <Footer />
     </>
   );
 };
